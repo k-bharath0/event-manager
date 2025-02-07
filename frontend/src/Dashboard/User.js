@@ -64,7 +64,7 @@ export default function User() {
             <Search EventSearch={EventSearch}/>
             <Container>
             {search &&
-            <Button onClick={fetchAllEvents} style={{marginLeft:"100%"}} className="btn-close" aria-label="Close"></Button>}
+            <Button onClick={fetchAllEvents} style={{marginLeft:"98%"}} className="btn-close" aria-label="Close"></Button>}
         <Tabs activeKey={key} onSelect={(k) => setKey(k)} className="pt-5">
           <Tab eventKey="myEvents" title="My Events">
           {fevents.map((event) => (
