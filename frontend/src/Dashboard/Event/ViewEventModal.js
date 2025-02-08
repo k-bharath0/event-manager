@@ -17,13 +17,13 @@ export default function ViewEventModal({ event, show, closeModal,fetch,int }) {
       e.preventDefault();
       axios.post(`${API_BASE_URL}/interest`,{eventId: id,userId: localStorage.getItem('user')})
       .then((response) => {
-        // Handle success response
+        
         fetch();
         alert("Interest saved successfully:");
-        // You can update state, show a success message, etc.
+        
       })
       .catch((error) => {
-        // Handle error response
+        
         alert("There was an error saving the interest:");
       });
   }
